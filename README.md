@@ -23,6 +23,14 @@ The result is WTF-8, and even UTF-8 if the input is valid UTF-16.
 the possibly broken UTF-16 data.  All it does is actually write every code
 points below `0x10000` as plain UTF-16 units, even surrogate halves.
 
+## UTF-32 support
+
+As a proof of concept, there is also support for broken UTF-32.  Just like
+WTF-8 and broken UTF-16, is allows reserved code points to appear and encodes
+and decodes them happily.  Only WTF-8/UTF-32 pairs are provided, but they can
+be streamed together to convert directly between UTF-16 and UTF-32, using e.g.
+`wtf162wtf8 < input | wtf82utf32 > output`.
+
 ## Regarding Endianess
 
 These tools are naive, and don't actually do anything about endianess.  The

@@ -16,5 +16,7 @@ install-sh
 missing
 
 # built programs
-wtf162wtf8
 wtf82wtf16
+wtf82wtf32
+wtf162wtf8
+wtf322wtf8
