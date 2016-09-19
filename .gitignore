@@ -1,0 +1,20 @@
+# build system stuff
+*.o
+*.a
+.deps/
+.dirstamp
+Makefile
+Makefile.in
+aclocal.m4
+ar-lib
+autom4te.cache/
+compile
+configure
+config.*
+depcomp
+install-sh
+missing
+
+# built programs
+wtf162wtf8
+wtf82wtf16
